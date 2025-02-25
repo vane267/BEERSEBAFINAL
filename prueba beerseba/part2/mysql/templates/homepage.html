@@ -12,96 +12,99 @@
 <body onload="cargar_eventos()">
 
 
-    <!-- Barra superior -->
-    <div class="barra-superior">
-        <div class="contacto">
-            <span>+54 9 11 2338-4312</span> | 
-            <span>beersebaonline@gmail.com</span>
-        </div>
-        <div class="mayorista">
-            VENTA MAYORISTA TALLES ESPECIALES
-        </div>
-    </div>
+   <!--MENUU-->
 
-    <!-- Contenedor desplegable 1 -->
-    <nav id="nav1" class="navbar">
-      <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
-      <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
-        <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <p id="pegar_1"></p> <br>
-        <a class="sidebar-a" href="homepage (1).html">INICIO</a>
-        <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
-        <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+        <!-- Barra superior -->
+        <div class="barra-superior">
+          <div class="contacto">
+              <span>+54 9 11 2338-4312</span> | 
+              <span>beersebaonline@gmail.com</span>
+          </div>
+          <div class="mayorista">
+              VENTA MAYORISTA TALLES ESPECIALES
+          </div>
       </div>
-    </nav>
+  
+      <!-- Barra de navegación -->
 
-    <!-- Contenedor logo y desplegable 2 -->
-    <div class="logo1" id="nav-bar">       
-      <div class="logo">    
-        <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
-      </div>
-      <!-- Contenedor de buscar y desplegable 2-->
-      <div class="nav-extra" id="nav-adicional">
-
-        <!-- Contenedor -->
-        <input type="search" placeholder="Buscar">
-        <!-- Contenedor Iniciar sesion -->
-        <div class="cont-parte1" id="parte1">
-                <a href="Registrarse.html">Crear cuenta</a> | <a href="login_usuario.html">Iniciar sesión</a>
+      <nav id="nav1" class="navbar">
+        <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+        <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+          <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <p id="pegar_1"></p> <br>
+          <a class="sidebar-a" href="../templates/homepage.html">INICIO</a>
+          <a class="sidebar-a" href="../templates/soloprod.html">PRODUCTOS</a>
+          <a class="sidebar-a" href="../templates/quienes somos.html">QUIÉNES SOMOS</a>
         </div>
-        <!-- Contenedor Nombre y desplegable -->
-        <div class="profile-dropdown" id="parte2">
-              <!-- Nombre e imagen -->
-              <div class="profile-dropdown-btn" >
-                <div class="profile-img">
-                  <i class="fa-solid fa-circle"></i>
-                </div>
-                <span>
-                  Victoria
-                  <i class="fa-solid fa-angle-down"></i>
-                </span>
-              </div>
-              <!-- Desplegable 2 -->
-              <div class="profile-dropdown-list">
-                <div class="profile-dropdown-list-item">
-                  <a href="Edit_profile.html">
-                    <i class="fa-regular fa-user"></i>
-                    Editar Perfil
-                  </a>
-                </div> 
+      </nav>
+  
+      <!-- Contenedor logo y desplegable 2 -->
+      <div class="logo1" id="nav-bar">       
+        <div class="logo">    
+          <img src="../static/pics/image-removebg-preview.png" alt="Beerseba Logo">
+        </div>
 
-                <div class="profile-dropdown-list-item">
-                  <a href="favoritos.html">
-                    <i class="fas fa-heart"></i>
-                    Favoritos
-                  </a>
+        <!-- Contenedor de buscar y desplegable 2-->
+        <div class="nav-extra" id="nav-adicional">
+          <!-- Contenedor -->
+          <input type="search" placeholder="Buscar">
+            <!-- Contenedor Iniciar sesion -->
+            <div class="cont-parte1" id="parte1">
+            <a href="../templates/Registrarse.html">Crear cuenta</a> | <a href="../templates/login_usuario.html">Iniciar sesión</a>
+          </div>
+          <!-- Contenedor Nombre y desplegable -->
+          <div class="profile-dropdown" id="parte2">
+                <!-- Nombre e imagen -->
+                <div class="profile-dropdown-btn">
+                  <div class="profile-img">
+                    <i class="fa-solid fa-circle"></i>
+                  </div>
+                  <span
+                    >Victoria
+                    <i class="fa-solid fa-angle-down"></i>
+                  </span>
                 </div>
-      
-                <div class="profile-dropdown-list-item">
-                 <a href="mis_compras.html">
-                   <i class="fa-solid fa-chart-line"></i>
-                    Mis Compras
-                  </a>
+                <!-- Desplegable 2 -->
+                <div class="profile-dropdown-list">
+                  <div class="profile-dropdown-list-item">
+                    <a href="../templates/Edit_profile.html">
+                      <i class="fa-regular fa-user"></i>
+                      Editar Perfil
+                    </a>
+                  </div> 
+
+                  <div class="profile-dropdown-list-item">
+                    <a href="../templates/favoritos.html">
+                      <i class="fas fa-heart"></i>
+                      Favoritos
+                    </a>
+                  </div>
+        
+                  <div class="profile-dropdown-list-item">
+                  <a href="../templates/mis_compras.html">
+                    <i class="fa-solid fa-chart-line"></i>
+                      Mis Compras
+                    </a>
+                  </div>
+        
+                  <div class="profile-dropdown-list-item">
+                    <a href="../templates/help&support.html">
+                      <i class="fa-regular fa-circle-question"></i>
+                      Help & Support
+                    </a>
+                  </div>
+                  <hr/>
+        
+                  <div class="profile-dropdown-list-item">
+                    <a href="../templates/homepage.html" id="salir">
+                      <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                      Log out
+                    </a>
+                  </div>
                 </div>
-      
-                <div class="profile-dropdown-list-item">
-                  <a href="help&support.html">
-                    <i class="fa-regular fa-circle-question"></i>
-                    Help & Support
-                  </a>
-                </div>
-                <hr/>
-      
-                <div class="profile-dropdown-list-item">
-                  <a href="homepage (1).html" id="salir">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    Log out
-                  </a>
-                </div>
-              </div>
-        </div>           
+          </div>           
+        </div>
       </div>
-    </div>
 
     <!-- Banner principal -->
     <section class="banner">
@@ -110,8 +113,8 @@
             <p>EL VERDADERO PODER VIENE DE ADENTRO</p>
         </div>
         <div class="imagenes-banner">
-            <img src="pics\conjunto verde.jpg" alt="Conjunto Sastrero Verde">
-            <img src="pics/Campera de Morley .jpg" alt="CAmpera de Morley">
+            <img src="../static/pics/conjunto verde.jpg" alt="Conjunto Sastrero Verde">
+            <img src="../static/pics/Campera de Morley .jpg" alt="CAmpera de Morley">
         </div>
         <div class="colores">
             <!-- Paleta de colores -->
@@ -129,27 +132,27 @@
         <h2>Productos Disponibles</h2>
         <div class="productos-grid">
             <div class="producto">
-                <a href="detalle.html"><img src="pics/Recto de Bengalina .jpg" alt="Recto de Bengalina Negro"></a>
+                <a href="../templates/detalle.html"><img src="../static/pics/Recto de Bengalina .jpg" alt="Recto de Bengalina Negro"></a>
                 <h3>Recto de Bengalina</h3>
                 <p>$12.500,00</p>
             </div>
             <div class="producto">
-                <img src="pics/cute.jpg" alt="Jogger de Bengalina Café">
+                <img src="../static/pics/cute.jpg" alt="Jogger de Bengalina Café">
                 <h3>Jogger de Bengalina</h3>
                 <p>$13.200,00</p>
             </div>
             <div class="producto">
-                <img src="pics/Pantalon Cuerina.jpg" alt="Pantalon de Cuerina Negro">
+                <img src="../static/pics/Pantalon Cuerina.jpg" alt="Pantalon de Cuerina Negro">
                 <h3>Pantalon de Cuerina</h3>
                 <p>$14.150,00</p>
             </div>
             <div class="producto">
-                <img src="pics/estampada.JPG" alt="Blusa Estampada Flores en tonos naranjas y amarillos">
+                <img src="../static/pics/estampada.JPG" alt="Blusa Estampada Flores en tonos naranjas y amarillos">
                 <h3>Blusa Estampada</h3>
                 <p>$14.150,00</p>
             </div>
             <div class="producto">
-                <img src="pics/Saco Barbie.jpg" alt="Saco Fucsia Brilloso">
+                <img src="../static/pics/Saco Barbie.jpg" alt="Saco Fucsia Brilloso">
                 <h3>Saco Brilloso</h3>
                 <p>$14.150,00</p>
             </div>
