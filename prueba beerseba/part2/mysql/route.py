@@ -12,4 +12,70 @@ def route(app):
         '''
         param={} 
         return home_pagina(param)   
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @app.route("/Registrarse")
+    def register():
+        ''' Info:
+          Carga la pagina para el registro del usuario
+        '''
+        param={}
+        return registro_pagina(param)  
+    
+
+    
+
         
