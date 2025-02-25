@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="Registrarse.css">
-        <link rel="stylesheet" href="homepage (1).css">
-        <script language="javascript" type="text/javascript" src="Registrarse.js"></script>
+        <link rel="stylesheet" href="../static/css/Registrarse.css">
+        <link rel="stylesheet" href="../static/css/homepage (1).css">
+        <script language="javascript" type="text/javascript" src="../static/js/Registrarse.js"></script>
         <title>Registrarse</title>
 
     </head>
@@ -15,8 +15,8 @@
     <body id="cuerpo" onload="cargar_eventos();">
 
 
-        <!-- Barra superior -->
-    <div class="barra-superior">
+       <!-- Barra superior -->
+       <div class="barra-superior">
         <div class="contacto">
             <span>+54 9 11 2338-4312</span> | 
             <span>beersebaonline@gmail.com</span>
@@ -26,22 +26,23 @@
         </div>
     </div>
 
-    <!-- Contenedor desplegable 1 -->
+    <!-- Barra de navegación -->
+
     <nav id="nav1" class="navbar">
       <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
       <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
         <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
         <p id="pegar_1"></p> <br>
-        <a class="sidebar-a" href="homepage (1).html">INICIO</a>
-        <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
-        <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+        <a class="sidebar-a" href="../templates/homepage.html">INICIO</a>
+        <a class="sidebar-a" href="../templates/soloprod.html">PRODUCTOS</a>
+        <a class="sidebar-a" href="../templates/quienes somos.html">QUIÉNES SOMOS</a>
       </div>
     </nav>
 
     <!-- Contenedor logo y desplegable 2 -->
     <div class="logo1" id="nav-bar">       
       <div class="logo">    
-        <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
+        <img src="../static/css/image-removebg-preview.png" alt="Beerseba Logo">
       </div>
       <!-- Contenedor de buscar y desplegable 2-->
       <div class="nav-extra" id="nav-adicional">
@@ -105,7 +106,7 @@
 
 			<div class="register"></div>
 				<p>¿Ya tiene cuenta?
-					<a href="login_usuario.html">Log In</a>
+					<a href="../templates/login_usuario.html">Log In</a>
 				</p>
 
             <button type="button" id="id_button" class="box2">Registrarme</button>
