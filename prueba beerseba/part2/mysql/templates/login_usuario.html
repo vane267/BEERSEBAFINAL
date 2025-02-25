@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="login_usuario.css">
+	  <link rel="stylesheet" href="homepage (1).css">
+    <title>Beerseba</title>
+</head>
+<body onload="cargar_eventos()">
+      <!-- Barra superior -->
+	  <div class="barra-superior">
+        <div class="contacto">
+            <span>+54 9 11 2338-4312</span> | 
+            <span>beersebaonline@gmail.com</span>
+        </div>
+        <div class="mayorista">
+            VENTA MAYORISTA TALLES ESPECIALES
+        </div>
+    </div>
+
+    <!-- Contenedor desplegable 1 -->
+    <nav id="nav1" class="navbar">
+      <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+      <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+        <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <p id="pegar_1"></p> <br>
+		<a class="sidebar-a" href="homepage (1).html">INICIO</a>
+        <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
+        <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+      </div>
+    </nav>
+
+    <!-- Contenedor logo y desplegable 2 -->
+    <div class="logo1" id="nav-bar">       
+      <div class="logo">    
+        <a href="homepage (1).html"><img src="pics/image-removebg-preview.png" alt="Beerseba Logo"></a>
+      </div>
+      <!-- Contenedor de buscar y desplegable 2-->
+      <div class="nav-extra" id="nav-adicional">
+
+        <!-- Contenedor Iniciar sesion -->
+        <!-- Contenedor Nombre y desplegable -->
+        
+                  
+      </div>
+    </div>
+
+        
+	<div class="wrapper">
+		<form name= "mylogin" id="mylogin">
+			<h2>Login</h2>
+			<div class="input-field" id="input-mail">
+				<input name="mail" type="text" id="email" required>
+				<span class="barra"></span>
+				<label class="mailcss">Ingresar Email</label>
+			</div>
+			<div class="warningS">
+				<p class="warning" id="warning-mail"></p>
+			</div>
+
+			<div class="input-field" id="input-pass">
+				<input name= "password" type="password" id="password" required>
+				<span class="barra"></span>
+				<label class="passcss">Ingresar constraseña</label> 
+			</div>
+
+			<div class="warningS">
+			<p class="warning" id="warning-password"></p>
+			</div>
+
+			<div class="forget">
+				<label for="remember">
+					<input type="checkbox" id="remember">
+					<p>Recordarme</p>
+				</label>
+				<a class="forgot"  href="#">¿Olvidaste tu contraseña?</a>
+			</div>
+			<button id="lastbtn">Log In</button>
+			<div class="register">
+				<p>¿No tiene cuenta?
+					<a href="Registrarse.html">Registrate</a>
+				</p>
+				
+			</div>
+		</form>
+	
+	<script src="login_usuario.js"></script>
+	</div>
+
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="Edit_profile.css">
+    <link rel="stylesheet" href="homepage (1).css">
+    <script language="javascript" type="text/javascript" src="homepage (1).js"></script>
+    <script language="javascript" type="text/javascript" src="Edit_profile.js"></script>
+  </head>
+
+<body id="cuerpo_1" onload="cargar_eventos()">
+
+   <!--MENUU-->
+
+        <!-- Barra superior -->
+        <div class="barra-superior">
+            <div class="contacto">
+                <span>+54 9 11 2338-4312</span> | 
+                <span>beersebaonline@gmail.com</span>
+            </div>
+            <div class="mayorista">
+                VENTA MAYORISTA TALLES ESPECIALES
+            </div>
+        </div>
+    
+        <!-- Barra de navegación -->
+        <nav id="nav1" class="navbar">
+          <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+          <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+            <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <p id="pegar_1"></p> <br>
+            <a class="sidebar-a" href="homepage (1).html">INICIO</a>
+            <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
+            <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+          </div>
+        </nav>
+    
+        <!-- Contenedor logo y desplegable 2 -->
+        <div class="logo1" id="nav-bar">       
+          <div class="logo">    
+            <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
+          </div>
+
+          <!-- Contenedor de buscar y desplegable 2-->
+          <div class="nav-extra" id="nav-adicional">
+            <!-- Contenedor -->
+            <input type="search" placeholder="Buscar">
+            <!-- Contenedor Iniciar sesion -->
+            <div class="cont-parte1" id="parte1">
+                    <a href="Registrarse.html">Crear cuenta</a> | <a href="login_usuario.html">Iniciar sesión</a>
+            </div>
+            <!-- Contenedor Nombre y desplegable -->
+            <div class="profile-dropdown" id="parte2">
+                  <!-- Nombre e imagen -->
+                  <div class="profile-dropdown-btn">
+                    <div class="profile-img">
+                      <i class="fa-solid fa-circle"></i>
+                    </div>
+                    <span
+                      >Victoria
+                      <i class="fa-solid fa-angle-down"></i>
+                    </span>
+                  </div>
+                  <!-- Desplegable 2 -->
+                  <div class="profile-dropdown-list">
+                    <div class="profile-dropdown-list-item">
+                      <a href="Edit_profile.html">
+                        <i class="fa-regular fa-user"></i>
+                        Editar Perfil
+                      </a>
+                    </div> 
+    
+                    <div class="profile-dropdown-list-item">
+                      <a href="favoritos.html">
+                        <i class="fas fa-heart"></i>
+                        Favoritos
+                      </a>
+                    </div>
+          
+                    <div class="profile-dropdown-list-item">
+                     <a href="mis_compras.html">
+                       <i class="fa-solid fa-chart-line"></i>
+                        Mis Compras
+                      </a>
+                    </div>
+          
+                    <div class="profile-dropdown-list-item">
+                      <a href="help&support.html">
+                        <i class="fa-regular fa-circle-question"></i>
+                        Help & Support
+                      </a>
+                    </div>
+                    <hr/>
+          
+                    <div class="profile-dropdown-list-item">
+                      <a href="homepage (1).html" id="salir">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        Log out
+                      </a>
+                    </div>
+                  </div>
+            </div>           
+          </div>
+        </div>
+        <hr>
+    
+        <form class="box3" action="prueba.php" method="get">
+
+            <div class="grid-item item00">
+                <h3>Configuración de Cuenta</h3>
+            </div>
+
+            <div class="profile-pic">
+                <img src="pics/profile.png" alt=""> <br><br>
+                <input type="file" name="imgUser" id="imguser">
+            </div>  
+
+            <div class="grid-item item01">
+                <label for="nom01" class="box1">Nombre:</label><br>
+                <input class="w3-input" type="text" id="nombre"  value="Victoria"><br>
+
+                <label for="nom01" class="box1">Apellido:</label><br>
+                <input class="w3-input" type="text"  id="apellido" value="Rodriguez"><br>
+
+                <label class="box1">Celular:</label><br>
+                <input class="w3-input" type="text" id="celular" value="11234567"><br>
+            </div>
+
+            <div class="grid-item item01-5">
+
+                <label class="box1">Email:</label><br>
+                <input class="w3-input" type="text" id="mail" value="vicky05@gmail.com">
+                <span class="barra"></span>
+                <br>
+
+
+                <label class="box1">Tipo de documento:</label><br>
+                <select class="w3-input" class="box1" title="Seleccione...">
+                    <option value="0"  selected>Seleccionar..</option>
+                    <option value="DNI">DNI</option>
+                    <option value="CARNET">Pasaporte</option>
+                </select><br>
+            
+                <label class="box1">N° de documento:</label><br>
+                <input class="w3-input" type="text" id="documento" value="96123456"><br>
+
+                
+
+            </div>
+
+            <div class="grid-item item02">
+
+              <label class="box1">Contraseña:</label><br>
+              <input class="w3-input" type="password" id="contra" value="●●●●●●●●●●"/><br>
+
+              <label class="box1">Nueva Contraseña:</label><br>
+              <input class="w3-input" type="password"/><br>
+
+            </div>
+
+
+            <div class="grid-item lastbtn">
+                <button type="button" class="box2" id="button_prueba" onclick="HELLO()">Guardar Cambios</button>
+            </div>
+
+        </form>
+
+  
+    
+</body>
+</html>

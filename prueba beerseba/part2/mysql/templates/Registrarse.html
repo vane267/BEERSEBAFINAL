@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="Registrarse.css">
+        <link rel="stylesheet" href="homepage (1).css">
+        <script language="javascript" type="text/javascript" src="Registrarse.js"></script>
+        <title>Registrarse</title>
+
+    </head>
+
+    <body id="cuerpo" onload="cargar_eventos();">
+
+
+        <!-- Barra superior -->
+    <div class="barra-superior">
+        <div class="contacto">
+            <span>+54 9 11 2338-4312</span> | 
+            <span>beersebaonline@gmail.com</span>
+        </div>
+        <div class="mayorista">
+            VENTA MAYORISTA TALLES ESPECIALES
+        </div>
+    </div>
+
+    <!-- Contenedor desplegable 1 -->
+    <nav id="nav1" class="navbar">
+      <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+      <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+        <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <p id="pegar_1"></p> <br>
+        <a class="sidebar-a" href="homepage (1).html">INICIO</a>
+        <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
+        <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+      </div>
+    </nav>
+
+    <!-- Contenedor logo y desplegable 2 -->
+    <div class="logo1" id="nav-bar">       
+      <div class="logo">    
+        <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
+      </div>
+      <!-- Contenedor de buscar y desplegable 2-->
+      <div class="nav-extra" id="nav-adicional">
+
+        <!-- Contenedor -->
+        
+        <!-- Contenedor Iniciar sesion -->
+        
+        <!-- Contenedor Nombre y desplegable -->
+                 
+      </div>
+    </div>
+
+    <div class="box0">
+    <form class="box3">
+            <h3>Regístrate para comprar</h3><br>
+
+            <label for="cor01" class="box1">Email:</label><br>
+            <input id="id_mail" class="w3-input"  type="email" placeholder="Ingresa tu email.."><br>
+            <p id="alerta_mail" class="anular">Por favor de ingresar un e-mail valido</p>
+
+            <label for="nom01" class="box1">Nombres:</label><br>
+            <input id="id_nombre" class="w3-input" type="text" placeholder="Ingresa tu nombre.."><br>
+            <p id="alerta_nombre" class="anular">Por favor de ingresar unos nombres valido</p>
+
+            <label for="ape01" class="box1">Apellidos:</label><br>
+            <input id="id_apellido" class="w3-input" type="text" placeholder="Ingresa tu apellido.."><br>
+            <p id="alerta_apellido" class="anular">Por favor de ingresar unos apellidos valido</p>
+
+            <label class="box1">Tipo de documento:</label><br>
+            <select id="id_seleccionar" class="w3-input" class="box1" title="Seleccione...">
+                <option value="0" disabled selected>Seleccionar..</option>
+                <option value="DNI">DNI</option>
+                <option value="CARNET">Pasaporte</option>
+            </select><br>
+            <p id="alerta_seleccionar" class="anular">Por favor de seleccionar una opcion valida</p>
+
+
+            <label class="box1">N° de documento:</label><br>
+            <input id="id_dni" class="w3-input" type="text" placeholder="Ingresa tu DNI.."><br>
+            <p id="alerta_dni" class="anular">Por favor de ingresar un numero de documento valido</p>
+
+            <label class="box1">Celular:</label><br>
+            <input id="id_celular" class="w3-input" type="text" placeholder="Ingresa celular.."><br>
+            <p id="alerta_celular" class="anular">Por favor de ingresar un mumero celular valido</p>
+
+            <label class="box1">Clave:</label><br>
+            <input id="id_clave" class="w3-input" type="password" placeholder="Ingresa clave.."/><br>
+            <p id="alerta_clave" class="anular">
+            La contraseña debe tener:<br>
+            -Al entre 8 y 16 caracteres<br> 
+            -Al menos un dígito<br> 
+            -Al menos una minúscula<br> 
+            -Al menos una mayúscula<br> 
+            -Al menos un caracter no alfanumérico<br>
+            </p>
+
+            <input id="id_box4" class="box4" type="checkbox" value=""/>
+            <label class="box4" style="color: #aaa2a2;">Acepto los términos y condiciones de "Beerseba" y autorizo la política de privacidad.</label><br><br>
+            <p id="alerta_box" class="anular"> Por favor de aceptar los terminos y condiciones</p>
+
+			<div class="register"></div>
+				<p>¿Ya tiene cuenta?
+					<a href="login_usuario.html">Log In</a>
+				</p>
+
+            <button type="button" id="id_button" class="box2">Registrarme</button>
+    </form>
+    </div>
+    
+    </body>
+</html>

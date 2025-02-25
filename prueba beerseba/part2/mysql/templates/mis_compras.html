@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beerseba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="mis_compras.css">
+    <link rel="stylesheet" href="homepage (1).css">
+    <script language="javascript" type="text/javascript" src="homepage (1).js"></script>
+</head>
+<body onload="cargar_eventos()">
+
+
+  <!-- Barra superior -->
+  <div class="barra-superior">
+      <div class="contacto">
+          <span>+54 9 11 2338-4312</span> | 
+          <span>beersebaonline@gmail.com</span>
+      </div>
+      <div class="mayorista">
+          VENTA MAYORISTA TALLES ESPECIALES
+      </div>
+  </div>
+
+  <!-- Contenedor desplegable 1 -->
+  <nav id="nav1" class="navbar">
+    <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+    <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+      <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <p id="pegar_1"></p> <br>
+      <a class="sidebar-a" href="homepage (1).html">INICIO</a>
+      <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
+      <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+    </div>
+  </nav>
+
+  <!-- Contenedor logo y desplegable 2 -->
+  <div class="logo1" id="nav-bar">       
+    <div class="logo">    
+      <a href="homepage (1).html"><img src="pics/image-removebg-preview.png" alt="Beerseba Logo"></a>
+    </div>
+    <!-- Contenedor de buscar y desplegable 2-->
+    <div class="nav-extra" id="nav-adicional">
+
+      <!-- Contenedor -->
+      <input type="search" placeholder="Buscar">
+      <!-- Contenedor Iniciar sesion -->
+      <div class="cont-parte1" id="parte1">
+              <a href="Registrarse.html">Crear cuenta</a> | <a href="login_usuario.html">Iniciar sesión</a>
+      </div>
+      <!-- Contenedor Nombre y desplegable -->
+      <div class="profile-dropdown" id="parte2">
+            <!-- Nombre e imagen -->
+            <div class="profile-dropdown-btn">
+              <div class="profile-img">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <span
+                >Victoria
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <!-- Desplegable 2 -->
+            <div class="profile-dropdown-list">
+              <div class="profile-dropdown-list-item">
+                <a href="Edit_profile.html">
+                  <i class="fa-regular fa-user"></i>
+                  Editar Perfil
+                </a>
+              </div> 
+
+              <div class="profile-dropdown-list-item">
+                <a href="favoritos.html">
+                  <i class="fas fa-heart"></i>
+                  Favoritos
+                </a>
+              </div>
+    
+              <div class="profile-dropdown-list-item">
+               <a href="mis_compras.html">
+                 <i class="fa-solid fa-chart-line"></i>
+                  Mis Compras
+                </a>
+              </div>
+    
+              <div class="profile-dropdown-list-item">
+                <a href="help&support.html">
+                  <i class="fa-regular fa-circle-question"></i>
+                  Help & Support
+                </a>
+              </div>
+              <hr/>
+    
+              <div class="profile-dropdown-list-item">
+                <a href="homepage (1).html" id="salir">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Log out
+                </a>
+              </div>
+            </div>
+      </div>           
+    </div>
+  </div>
+  
+  
+  <!-- FIN DE LA BARRA SUPERIOR -->
+
+ 
+    
+        <!-- Lista de productos -->
+        <section class="my_products">
+            <h2>Mis Compras</h2>
+
+            <div class="my_products_grid">
+                <div class="date">
+                    <h5>08 de Agosto</h5>
+                </div>
+                <div class="my_product">
+                    <div class="info">
+                        <h3>Entregado el 10 de Agosto</h3>
+                        <p id="d01">Recto de Bengalina</p><br>
+                        <p>$15.000,00</p>
+                        <button class="buy-again-btn"><a href="detalle.html">Volver a Comprar</a></button>
+
+                    </div>
+                    <div class="lala">
+                        <img src="pics\Recto de Bengalina .jpg" alt="Recto de Bengalina Negro">
+                    </div>
+                </div>
+            </div>    
+
+            <div class="my_products_grid">
+                <div class="date">
+                    <h5>10 de Septiembre</h5>
+                </div>
+                <div class="my_product">
+                    <div class="info">
+                        <h3>Entregado el 12 de Septiembre</h3>
+                        <p id="d01">Saco Brillante </p><br>
+                        <p>$18.000,00</p>
+                        <button class="buy-again-btn"><a href="detalle.html">Volver a Comprar</a></button>
+
+                    </div>
+                    <div class="lala">
+                        <img src="pics/Saco Barbie.jpg" alt="Saco ROSA BRILLANTE">
+                    </div>
+                </div>
+            </div> 
+
+        </section>
+    
+    
+    
+    </body>
+    </html>

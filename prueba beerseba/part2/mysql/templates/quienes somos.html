@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beerseba</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="homepage (1).css">
+    <link rel="stylesheet" href="quienes-somos.css">
+    <script language="javascript" type="text/javascript" src="homepage (1).js"></script>
+    
+
+</head>
+  
+<body id="cuerpo_1" onload="cargar_eventos()">
+ 
+<!-- Barra superior -->
+  <div class="barra-superior">
+    <div class="contacto">
+        <span>+54 9 11 2338-4312</span> | 
+        <span>beersebaonline@gmail.com</span>
+    </div>
+    <div class="mayorista">
+        VENTA MAYORISTA TALLES ESPECIALES
+    </div>
+  </div>
+
+  <!-- Contenedor desplegable 1 -->
+  <nav id="nav1" class="navbar">
+  <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+  <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+    <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <p id="pegar_1"></p> <br>
+    <a class="sidebar-a" href="homepage (1).html">INICIO</a>
+    <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
+    <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+  </div>
+  </nav>
+
+  <!-- Contenedor logo y desplegable 2 -->
+  <div class="logo1" id="nav-bar">       
+  <div class="logo">    
+    <img src="pics/image-removebg-preview.png" alt="Beerseba Logo">
+  </div>
+  <!-- Contenedor de buscar y desplegable 2-->
+  <div class="nav-extra" id="nav-adicional">
+
+    <!-- Contenedor -->
+    <input type="search" placeholder="Buscar">
+    <!-- Contenedor Iniciar sesion -->
+    <div class="cont-parte1" id="parte1">
+            <a href="Registrarse.html">Crear cuenta</a> | <a href="login_usuario.html">Iniciar sesión</a>
+    </div>
+    <!-- Contenedor Nombre y desplegable -->
+    <div class="profile-dropdown" id="parte2">
+          <!-- Nombre e imagen -->
+          <div class="profile-dropdown-btn">
+            <div class="profile-img">
+              <i class="fa-solid fa-circle"></i>
+            </div>
+            <span
+              >Victoria
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+          </div>
+          <!-- Desplegable 2 -->
+          <div class="profile-dropdown-list">
+            <div class="profile-dropdown-list-item">
+              <a href="Edit_profile.html">
+                <i class="fa-regular fa-user"></i>
+                Editar Perfil
+              </a>
+            </div> 
+
+            <div class="profile-dropdown-list-item">
+              <a href="favoritos.html">
+                <i class="fas fa-heart"></i>
+                Favoritos
+              </a>
+            </div>
+
+            <div class="profile-dropdown-list-item">
+            <a href="mis_compras.html">
+              <i class="fa-solid fa-chart-line"></i>
+                Mis Compras
+              </a>
+            </div>
+
+            <div class="profile-dropdown-list-item">
+              <a href="help&support.html">
+                <i class="fa-regular fa-circle-question"></i>
+                Help & Support
+              </a>
+            </div>
+            <hr/>
+
+            <div class="profile-dropdown-list-item">
+              <a href="homepage (1).html" id="salir">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log out
+              </a>
+            </div>
+          </div>
+    </div>           
+  </div>
+  </div>
+ 
+      <!-- FIN DE LA BARRA SUPERIOR -->
+
+
+<div class="section">
+    <div class="container-img">
+       <img 
+        src="pics\quines somos.png" 
+        alt="imagen de modelo" 
+        class="img-modelo">
+    </div>
+
+    <div class="container-text">
+        <div class="container-title"> 
+            <span id="title">Quiénes Somos</span>
+        </div>
+
+        <div class="text">
+            <p>Somos Ana, Miguel y Sara, una familia emprendedora que quiso darle forma a la voz interior que tienen muchas mujeres, a través de prendas de indumentaria urbana y moderna. 
+            
+            <p>Beerseba refleja que Dios ha hecho de cada mujer una bendición y un ser único.</p>
+            
+            <p>En Beerseba, creemos que la verdadera belleza comienza desde el interior y se irradia hacia el exterior. Nuestra visión es clara: reflejar el alma, el carácter y la esencia de cada mujer en su apariencia externa, combinando la profundidad interior con la elegancia exterior.</p>
+            
+            <p>Nos dedicamos a diseñar indumentaria que no solo adorna, sino que también expresa. Cada prenda que creamos es una manifestación de la individualidad, la fortaleza y la gracia de la mujer Beerseba.</p>
+            
+            <p>Sabemos que la moda es más que ropa; es una declaración de identidad y un símbolo de empoderamiento. Nuestra misión es acompañar a la mujer Beerseba en todos los ámbitos de su vida, brindándole las herramientas para que se sienta segura, confiada y auténtica en cada paso que da.</p>
+        </div>
+    </div>
+</div>   
+
+    
+
+<script src="homepage2.js"></script>
+
+</body>
+</html>

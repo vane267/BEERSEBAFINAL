@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="homepage (1).css">
+    <link rel="stylesheet" href="help&support.css">
+    <script language="javascript" type="text/javascript" src="homepage (1).js"></script>
+
+</head>
+<body onload="cargar_eventos()">
+
+
+  <!-- Barra superior -->
+  <div class="barra-superior">
+      <div class="contacto">
+          <span>+54 9 11 2338-4312</span> | 
+          <span>beersebaonline@gmail.com</span>
+      </div>
+      <div class="mayorista">
+          VENTA MAYORISTA TALLES ESPECIALES
+      </div>
+  </div>
+
+  <!-- Contenedor desplegable 1 -->
+  <nav id="nav1" class="navbar">
+    <button id="barra-desplegable" class="openbtn" onclick="openNav()">☰</button> 
+    <div id="mySidebar" class="sidebar">  <!-- Desplegable 1 -->
+      <a class="sidebar-a" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <p id="pegar_1"></p> <br>
+      <a class="sidebar-a" href="homepage (1).html">INICIO</a>
+      <a class="sidebar-a" href="soloprod.html">PRODUCTOS</a>
+      <a class="sidebar-a" href="quienes somos.html">QUIÉNES SOMOS</a>
+    </div>
+  </nav>
+
+  <!-- Contenedor logo y desplegable 2 -->
+  <div class="logo1" id="nav-bar">       
+    <div class="logo">    
+      <a href="homepage (1).html"><img src="pics/image-removebg-preview.png" alt="Beerseba Logo"></a>
+    </div>
+    <!-- Contenedor de buscar y desplegable 2-->
+    <div class="nav-extra" id="nav-adicional">
+
+      <!-- Contenedor -->
+      <input type="search" placeholder="Buscar">
+      <!-- Contenedor Iniciar sesion -->
+      <div class="cont-parte1" id="parte1">
+              <a href="Registrarse.html">Crear cuenta</a> | <a href="login_usuario.html">Iniciar sesión</a>
+      </div>
+      <!-- Contenedor Nombre y desplegable -->
+      <div class="profile-dropdown" id="parte2">
+            <!-- Nombre e imagen -->
+            <div class="profile-dropdown-btn">
+              <div class="profile-img">
+                <i class="fa-solid fa-circle"></i>
+              </div>
+              <span
+                >Victoria
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+            </div>
+            <!-- Desplegable 2 -->
+            <div class="profile-dropdown-list">
+              <div class="profile-dropdown-list-item">
+                <a href="Edit_profile.html">
+                  <i class="fa-regular fa-user"></i>
+                  Editar Perfil
+                </a>
+              </div> 
+
+              <div class="profile-dropdown-list-item">
+                <a href="favoritos.html">
+                  <i class="fas fa-heart"></i>
+                  Favoritos
+                </a>
+              </div>
+    
+              <div class="profile-dropdown-list-item">
+               <a href="mis_compras.html">
+                 <i class="fa-solid fa-chart-line"></i>
+                  Mis Compras
+                </a>
+              </div>
+    
+              <div class="profile-dropdown-list-item">
+                <a href="help&support.html">
+                  <i class="fa-regular fa-circle-question"></i>
+                  Help & Support
+                </a>
+              </div>
+              <hr/>
+    
+              <div class="profile-dropdown-list-item">
+                <a href="homepage (1).html" id="salir">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  Log out
+                </a>
+              </div>
+            </div>
+      </div>           
+    </div>
+  </div>
+  
+  
+  <hr>
+  <section class="help" id="help">
+
+          <div class="prefacio ">
+            <h1 class="heading">Contactanos</h1>
+            <p>Tratamos de mejorar cada día. Si tuvo algún inconveniente con la página, el envío, o le gustaria dejar una sugerencia, no dude en escribirnos. Nos comunicaremos con usted lo más pronto posible. <br><br>  Su satisfacción es nuestro objetivo principal siempre. </p>
+            <img class="image"  src="pics/Creative team-pana.png" alt=""> 
+          </div>
+
+          <div class="row">
+              <form action="" id="contacto">
+
+                  <input type="text" placeholder="Nombre Completo" class="box"  id="box-name" >
+                  <div class="warningS">
+                    <p class="warning" id="warning-name"></p>
+                  </div>
+
+                  <input type="email" placeholder="Email" id="box-email" class="box"  >
+                  <div class="warningS">
+                    <p class="warning" id="warning-mail"></p>
+                  </div>
+
+                  <input type="text" placeholder="Número de Contacto" id="box-number" class="box"  >
+                  <div class="warningS">
+                    <p class="warning" id="warning-number"></p>
+                  </div>
+
+                  <textarea name="" class="text-box" id="text-box" cols="50" rows="10" placeholder="Cuentenos..." ></textarea>
+                  <div class="warningS">
+                    <p class="warning" id="warning-texto"></p>
+                  </div>
+
+                  <button type="submit" class="form-btn">Enviar Mensaje</button>
+  
+              </form>
+              <script src="help&support.js"></script>
+          </div>
+
+
+          
+
+  </section>
+
+</body>
+</html>
