@@ -14,4 +14,4 @@ def home_pagina(param):
       Recibe 'param' el diccionario de parametros
       Retorna la pagina 'home' renderizada.
     '''
-    return render_template('homepage.html',param=param)
+    return render_template('homepage.html', param=param)
